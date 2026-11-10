@@ -1,14 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    padding-top: 140px;
+    padding-top: 100px;
     font-size: 18px;
-    padding: 20px;
-    box-sizing: border-box;
     background-color: #ededed;
 }
 
@@ -24,16 +27,9 @@ body {
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.inicio {
-    margin-top: 60px;
-    margin: 0;
-    text-align: center;
-    border-bottom: 3px solid #343334;
-    padding-bottom: 10px;
-}
 
 .cabecalho a {
-    color:white;
+    color: white;
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
@@ -43,20 +39,66 @@ body {
     color: #0062ff;
 }
 
-.secao {
-    height: 100vh;
-    padding: 40px;
-    box-sizing: border-box;
-    border-bottom: 1px solid #ddd;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.inicio {
     text-align: center;
-    scroll-margin-top: 120px;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #343334;
 }
+
+.inicio h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.secao {
+    padding: 40px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    scroll-margin-top: 100px;
+}
+
+.caracteristicas {
+    width: 85%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.caracteristicas h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.caracteristicas p {
+    color: black;
+    font-size: 17px;
+    line-height: 1.9;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.container-carac {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.celular {
+    width: 150px;
+    height: auto; 
+}
+
+.texto-carac {
+    text-align: left;
+}
+
 footer {
-    background-color: none;
+    background-color: transparent;
     color: #000000;
     text-align: center;
     padding: 20px;
