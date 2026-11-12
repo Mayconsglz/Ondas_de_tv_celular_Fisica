@@ -20,7 +20,7 @@ body {
     top: 0;
     width: 100%;
     background-color: #070b162c;
-    border-bottom: 1px solid #3163b4;
+    border-bottom: 1px solid #e9d716;
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
@@ -53,7 +53,7 @@ body {
     justify-content: center;
     text-align: center;
     padding-top: 60px;
-    background: l#070b16
+    background: #070b16
 }
 
 .banner h1 {
@@ -61,7 +61,7 @@ body {
 }
 
 .banner span {
-    color: #38bdf8;
+    color: #e9d716;
 }
 
 .container {
@@ -78,7 +78,7 @@ body {
     text-align: center;
     font-size: 28px;
     margin-bottom: 30px;
-    border-bottom: 3px solid #38bdf8;
+    border-bottom: 3px solid #e9d716;
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -106,7 +106,7 @@ body {
 }
 
 .bloco strong {
-    color: #38bdf8;
+    color: #e9d716;
     display: block;
     margin-bottom: 5px;
 }
@@ -132,7 +132,7 @@ body {
 .iniciais {
     width: 65px;
     height: 65px;
-    background-color: #38bdf8;
+    background-color: #e9d716;
     color: #070b16;
     font-weight: bold;
     border-radius: 50%;
@@ -144,7 +144,7 @@ body {
 
 .card span {
     display: block;
-    color: #38bdf8;
+    color: #e9d716;
     font-size: 14px;
     margin-bottom: 10px;
     text-align: center;
@@ -195,14 +195,14 @@ input[type="range"] {
 .botoes button {
     background-color: #131c33;
     color: #e5e9f5;
-    border: 1px solid #334155;
+    border: 1px solid #e9d716;
     padding: 8px 14px;
     border-radius: 6px;
     cursor: pointer;
 }
 
 .botoes button:hover {
-    background-color: #38bdf8;
+    background-color: #e9d716;
     color: #070b16;
 }
 
@@ -219,7 +219,7 @@ input[type="range"] {
 footer {
     text-align: center;
     padding: 40px 20px;
-    color: #94a3b8;
+    color: #e9d716;
     font-size: 14px;
     margin-top: 50px;
 }
