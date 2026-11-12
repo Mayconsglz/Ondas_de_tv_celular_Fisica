@@ -19,8 +19,8 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #070b162c;
-    border-bottom: 1px solid #e9d716;
+    background-color: #070b16;
+    border-bottom: 1px solid #1e293b;
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
@@ -29,7 +29,7 @@ body {
 }
 
 .logo {
-    color: #ffffff;
+    color: #e8f838;
     font-weight: bold;
     font-size: 18px;
     text-decoration: none;
@@ -43,7 +43,7 @@ body {
 }
 
 .topo nav a:hover {
-    color: #38bdf8;
+    color: #e8f838;
 }
 
 .banner {
@@ -51,17 +51,35 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    padding-top: 60px;
-    background: #070b16
+    padding: 60px 30px 0;
+    background: linear-gradient(to bottom, #0f172a, #070b16);
+}
+
+.banner-conteudo {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .banner h1 {
     font-size: 46px;
+    text-align: left;
 }
 
 .banner span {
-    color: #e9d716;
+    color: #e8f838;
+}
+
+.img-canto {
+    width: 160px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #e8f838;
+    box-shadow: 0 4px 12px rgba(56, 189, 248, 0.25);
 }
 
 .container {
@@ -72,19 +90,16 @@ body {
 
 .secao {
     padding-top: 80px;
+    text-align: center;
 }
 
 .secao h2 {
     text-align: center;
     font-size: 28px;
     margin-bottom: 30px;
-    border-bottom: 3px solid #e9d716;
+    border-bottom: 3px solid #e8f838;
     display: inline-block;
     padding-bottom: 5px;
-}
-
-.secao {
-    text-align: center;
 }
 
 .secao > div, .secao > p {
@@ -106,7 +121,7 @@ body {
 }
 
 .bloco strong {
-    color: #e9d716;
+    color: #e8f838;
     display: block;
     margin-bottom: 5px;
 }
@@ -132,7 +147,7 @@ body {
 .iniciais {
     width: 65px;
     height: 65px;
-    background-color: #e9d716;
+    background-color: #e8f838;
     color: #070b16;
     font-weight: bold;
     border-radius: 50%;
@@ -144,7 +159,7 @@ body {
 
 .card span {
     display: block;
-    color: #e9d716;
+    color: #e8f838;
     font-size: 14px;
     margin-bottom: 10px;
     text-align: center;
@@ -195,14 +210,14 @@ input[type="range"] {
 .botoes button {
     background-color: #131c33;
     color: #e5e9f5;
-    border: 1px solid #e9d716;
+    border: 1px solid #334155;
     padding: 8px 14px;
     border-radius: 6px;
     cursor: pointer;
 }
 
 .botoes button:hover {
-    background-color: #e9d716;
+    background-color: #e8f838;
     color: #070b16;
 }
 
@@ -217,11 +232,20 @@ input[type="range"] {
 }
 
 footer {
-    text-align: center;
-    padding: 40px 20px;
-    color: #e9d716;
+    border-top: 1px solid #1e293b;
+    padding: 30px;
+    color: #94a3b8;
     font-size: 14px;
     margin-top: 50px;
+}
+
+.footer-conteudo {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 @media (max-width: 700px) {
@@ -233,7 +257,12 @@ footer {
         margin: 0 8px;
         font-size: 13px;
     }
+    .banner-conteudo, .footer-conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
     .banner h1 {
         font-size: 32px;
+        text-align: center;
     }
 }
