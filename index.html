@@ -4,123 +4,223 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Ondas Eletromagnéticas</title>
+    <title>Ondas Eletromagnéticas – TV e Celular</title>
 </head>
 <body>
 
 <header class="cabecalho">
-    
-        <nav>
-            <a href="#historia">História</a>
-            <a href="#cb">Cientista e Biografia</a>
-            <a href="#caracteristicas">Características</a>
-            <a href="#aplicacao">Aplicação Tecnológica</a>
-            <a href="#saude">Aplicações saúde</a>
-        </nav>
-    </header>
-<br><br>
-<div id="home" class="inicio">
-    <h1>ONDAS DE TV - CELULAR</h1>
-</div>
-    <header id="historia">
-        <center><h2>Historia</h2></center>
-        <p>
-            A história dessas ondas começa no século XIX com a unificação da eletricidade e do magnetismo. O rádio e a
-            televisão evoluíram a partir da telegrafia sem fio do final dos anos 1800. A transmissão de imagens (televisão) começou a ser testada experimentalmente nas décadas de 1920 e 1930, popularizando-se globalmente após a Segunda Guerra Mundial.
-        </p>
-        <p>
-            Já a telefonia celular nasceu da evolução das redes de rádio móvel bidirecional (como rádios de polícia). A primeira chamada comercial de celular ocorreu em 1973 (pela Motorola), e a tecnologia evoluiu rapidamente através de gerações (1G analógico até o atual 5G), exigindo faixas de frequência cada vez mais complexas para transmitir dados em alta velocidade.  
-        </p>
-    </header>
-<br><br>
-    <header id="cb">
-        <center><h2>Biografia</h2></center>
-        <p>
-        James Clerk Maxwell (1831–1879): Físico e matemático escocês. Ele formulou as famosas Equações de Maxwell, provando 
-        matematicamente que a luz e as ondas eletromagnéticas viajam pelo espaço na velocidade da luz, unificando eletricidade, magnetismo e luz.
-        </p>
-        <p>
-        Heinrich Hertz (1857–1894): Físico alemão. Foi o primeiro a produzir e detectar ondas eletromagnéticas em laboratório (em 1887), comprovando empiricamente a teoria de Maxwell. Em sua homenagem, a unidade de medida de frequência é o Hertz (Hz).
-        </p>
-        <p>
-        Guglielmo Marconi (1874–1937): Inventor italiano que desenvolveu o primeiro sistema prático de telegrafia sem fio, sendo frequentemente lembrado como um dos pais das comunicações de rádio que sustentam a TV e o celular modernos.
-        </p>
-    </header>
-<br><br>
-    <header id="caracteristicas" class="caracteristicas">
-        <center><h2>Características</h2></center>
-        
-    <div class="container-carac">
-    
-        <img src="img/celular.jpg" alt="icone" class="celular">
-    
-        <div class="texto-carac">
-        <p><strong>Características das ondas de TV</strong></p>
-    <ul>
-        
-        <li>São ondas eletromagnéticas.</li>
-        <li>Transmitem som e imagem.</li>
-        <li>Viajam pelo ar em alta velocidade.</li>
-        <li>Utilizam antenas para transmitir e receber sinais.</li>
-        <li>Podem sofrer interferências e obstáculos</li>
-        <li>Faixa de frequência: aproximadamente 54 MHz a 698 MHz (varia conforme o padrão).</li>
-    </ul>
+    <a href="#home" class="logo">Ondas Eletromagnéticas</a>
+    <nav>
+        <a href="#historia">História</a>
+        <a href="#cb">Cientistas</a>
+        <a href="#caracteristicas">Características</a>
+        <a href="#simulador">Simulador</a>
+        <a href="#aplicacao">Aplicações</a>
+        <a href="#saude">Saúde</a>
+    </nav>
+</header>
 
-        <p><strong>Características das ondas de celular</strong></p>
-    <ul>
-        <li>São ondas eletromagnéticas de radiofrequência.</li>
-        <li>Permitem chamadas, mensagens e acesso à internet.</li>
-        <li>Utilizam antenas e torres de transmissão.</li>
-        <li>Funcionam por diferentes gerações (2G, 3G, 4G e 5G).</li>
-        <li>Permitem comunicação sem fio a longas distâncias</li>
-        <li>Faixa de frequência: aproximadamente 700 MHz a 3,5 GHz (4G e 5G, podendo variar).</li>
-        <li>Comprimento de onda: aproximadamente 8,6 cm a 43 cm.</li>
-    </ul>
+<section id="home" class="inicio">
+    <canvas id="ondas-hero"></canvas>
+    <div class="inicio-conteudo">
+        <h1>ONDAS DE <span class="destaque">TV</span> E <span class="destaque">CELULAR</span></h1>
+    </div>
+</section>
+
+<section id="historia" class="secao">
+    <h2 class="titulo revelar">História</h2>
+    <div class="marco revelar"><span class="ano">Séc. XIX</span><p>A história dessas ondas começa com a unificação da eletricidade e do magnetismo. O rádio e a televisão evoluíram a partir da telegrafia sem fio do final dos anos 1800.</p></div>
+    <div class="marco revelar"><span class="ano">1920–1930</span><p>A transmissão de imagens (televisão) começou a ser testada experimentalmente, popularizando-se globalmente após a Segunda Guerra Mundial.</p></div>
+    <div class="marco revelar"><span class="ano">1973</span><p>A telefonia celular nasceu da evolução das redes de rádio móvel bidirecional. A primeira chamada comercial de celular ocorreu em 1973, pela Motorola.</p></div>
+    <div class="marco revelar"><span class="ano">1G → 5G</span><p>A tecnologia evoluiu rapidamente, do 1G analógico até o atual 5G, exigindo faixas de frequência cada vez mais complexas para transmitir dados em alta velocidade.</p></div>
+</section>
+
+<section id="cb" class="secao">
+    <h2 class="titulo revelar">Cientistas e Biografia</h2>
+    <div class="cartoes">
+        <article class="cartao revelar">
+            <div class="avatar">J.C.M</div>
+            <h3>James Clerk Maxwell</h3>
+            <span class="datas">1831 – 1879</span>
+            <p>Físico escocês. Formulou as Equações de Maxwell, provando que luz e ondas eletromagnéticas viajam na velocidade da luz.</p>
+        </article>
+        <article class="cartao revelar">
+            <div class="avatar">H.H</div>
+            <h3>Heinrich Hertz</h3>
+            <span class="datas">1857 – 1894</span>
+            <p>Físico alemão. Produziu e detectou ondas eletromagnéticas em laboratório (1887). A unidade de frequência (Hz) homenageia seu nome.</p>
+        </article>
+        <article class="cartao revelar">
+            <div class="avatar">G.M</div>
+            <h3>Guglielmo Marconi</h3>
+            <span class="datas">1874 – 1937</span>
+            <p>Inventor italiano que desenvolveu o primeiro sistema prático de telegrafia sem fio, base para as comunicações modernas.</p>
+        </article>
+    </div>
+</section>
+
+<section id="caracteristicas" class="secao">
+    <h2 class="titulo revelar">Características</h2>
+    <div class="duas-colunas">
+        <div class="caixa tv revelar">
+            <h3>Ondas de TV</h3>
+            <ul>
+                <li>Ondas eletromagnéticas que transmitem som e imagem.</li>
+                <li>Utilizam antenas para envio e recepção de sinais.</li>
+                <li>Frequência: 54 MHz a 698 MHz.</li>
+            </ul>
+        </div>
+        <div class="caixa cel revelar">
+            <h3>Ondas de Celular</h3>
+            <ul>
+                <li>Ondas de radiofrequência para dados, voz e internet.</li>
+                <li>Utilizam torres de transmissão (2G a 5G).</li>
+                <li>Frequência: 700 MHz a 3,5 GHz.</li>
+                <li>Comprimento de onda: 8,6 cm a 43 cm.</li>
+            </ul>
         </div>
     </div>
-    
-    </header>
-</div>
-<br><br>
-    <header id="aplicacao">
-        <center><h2>Aplicação na tecnológica</h2></center>
-    <strong>Aplicações tecnológicas das ondas de TV</strong>
-    <ul>
-    <li>Transmissão de programas, notícias e entretenimento.</li>
-    <li>Transmissão de imagens e sons.</li>
-    <li>TV digital e transmissão via satélite.</li>
-</ul>
-    <strong>Aplicações tecnológicas das ondas de celular</strong>
-<ul>
-    <li>Realização de chamadas e videochamadas.</li>
-    <li>Envio de mensagens e arquivos.</li>
-    <li>Acesso à internet e redes sociais.</li>
-    <li>Localização por GPS e comunicação entre dispositivos.</li>
-</ul>
-        
-    </header>
-<br><br>
-    <header id="saude">
-        <center><h2>Aplicações na saúde</h2></center>
-    <strong>Aplicações na saúde – Ondas de TV</strong>
-    <ul>
-    <li>Transmissão de informações sobre saúde.</li>
-    <li>Divulgação de campanhas de vacinação e prevenção de doenças.</li>
-    <li>Educação e orientação da população.</li>
-</ul>
-    <strong>Aplicações na saúde – Ondas de celular</strong>
-<ul>
-    <li>Realização de consultas médicas on-line (telemedicina).</li>
-    <li>Monitoramento de pacientes por aplicativos e dispositivos.</li>
-    <li>Envio de resultados de exames e informações médicas.</li>
-    <li>Comunicação rápida entre profissionais de saúde.</li>
-</ul>
-    </header>
-    <br><br>
+</section>
 
+<section id="simulador" class="secao">
+    <h2 class="titulo revelar">Simulador de Onda</h2>
+    <p class="intro revelar">Ajuste a frequência para observar a variação no comprimento de onda</p>
+    <div class="simulador revelar">
+        <canvas id="ondas-sim" width="900" height="240"></canvas>
+        <div class="controles">
+            <label for="freq">Frequência: <strong id="freq-valor">700 MHz</strong></label>
+            <input type="range" id="freq" min="54" max="3500" value="700" step="1">
+            <div class="presets">
+                <button data-f="60">TV VHF (60 MHz)</button>
+                <button data-f="600">TV UHF (600 MHz)</button>
+                <button data-f="700">4G (700 MHz)</button>
+                <button data-f="3500">5G (3,5 GHz)</button>
+            </div>
+            <div class="resultado">
+                <div><small>Comprimento de onda</small><strong id="lambda">42,8 cm</strong></div>
+                <div><small>Velocidade</small><strong>300.000 km/s</strong></div>
+                <div><small>Faixa</small><strong id="faixa">Celular (4G)</strong></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="aplicacao" class="secao">
+    <h2 class="titulo revelar">Aplicação Tecnológica</h2>
+        <div class="duas-colunas">
+        <div class="caixa tv revelar">
+            <h3>Ondas de TV</h3>
+            <ul>
+                <li>Transmissão de programas, notícias e entretenimento.</li>
+                <li>Suporte à TV digital e transmissão via satélite.</li>
+            </ul>
+        </div>
+        <div class="caixa cel revelar">
+            <h3>Ondas de Celular</h3>
+            <ul>
+                <li>Chamadas, mensagens e acesso à internet móvel.</li>
+                <li>Geolocalização por GPS e comunicação digital rápida.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="saude" class="secao">
+    <h2 class="titulo revelar">Aplicações na Saúde</h2>
+    <div class="duas-colunas">
+        <div class="caixa tv revelar">
+            <h3>Ondas de TV</h3>
+            <ul>
+                <li>Divulgação de campanhas de vacinação e saúde pública.</li>
+                <li>Transmissão de conteúdos educativos para a população.</li>
+            </ul>
+        </div>
+        <div class="caixa cel revelar">
+            <h3>Ondas de Celular</h3>
+            <ul>
+                <li>Consultas online por telemedicina e monitoramento remoto.</li>
+                <li>Comunicação instantânea entre profissionais de saúde.</li>
+            </ul>
+        </div>
+    </div>
+</section>
 
 <footer class="footer">
-    <center><p>&copy; 2026 Física - Ondas Eletromagnéticas</p></center>
+    <p>&copy; 2026 Física - Ondas Eletromagnéticas</p>
 </footer>
+
+<script>
+
+const io = new IntersectionObserver((entradas) => {
+    entradas.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visivel'); io.unobserve(e.target); }
+    });
+}, { threshold: 0.15 });
+document.querySelectorAll('.revelar').forEach(el => io.observe(el));
+
+const hero = document.getElementById('ondas-hero'), hctx = hero.getContext('2d');
+function ajustaHero() { hero.width = hero.offsetWidth; hero.height = hero.offsetHeight; }
+ajustaHero(); addEventListener('resize', ajustaHero);
+let fase = 0;
+function desenhaHero() {
+    hctx.clearRect(0, 0, hero.width, hero.height);
+    fase += 1;
+    hctx.beginPath();
+    for (let x = 0; x <= hero.width; x += 4) {
+        const y = hero.height * 0.8 + Math.sin(x * 0.010 + fase * 0.020) * 30 + Math.sin(x * 0.005 + fase * 0.014) * 15;
+        x === 0 ? hctx.moveTo(x, y) : hctx.lineTo(x, y);
+    }
+    hctx.strokeStyle = 'rgba(56,189,248,0.5)'; hctx.lineWidth = 3; hctx.stroke();
+    requestAnimationFrame(desenhaHero);
+}
+desenhaHero();
+
+const sim = document.getElementById('ondas-sim'), sctx = sim.getContext('2d'), freq = document.getElementById('freq');
+let faseSim = 0;
+const formataFreq = f => f >= 1000 ? (f / 1000).toLocaleString('pt-BR', { maximumFractionDigits: 2 }) + ' GHz' : f + ' MHz';
+const formataLambda = m => m >= 1 ? m.toLocaleString('pt-BR', { maximumFractionDigits: 2 }) + ' m' : (m * 100).toLocaleString('pt-BR', { maximumFractionDigits: 1 }) + ' cm';
+const faixaDe = f => f < 700 ? 'TV (VHF/UHF)' : f < 1000 ? 'Celular (4G)' : f < 3000 ? 'Celular (3G/4G)' : 'Celular (5G)';
+
+function atualizaSim() {
+    const f = +freq.value;
+    document.getElementById('freq-valor').textContent = formataFreq(f);
+    document.getElementById('lambda').textContent = formataLambda(300 / f);
+    document.getElementById('faixa').textContent = faixaDe(f);
+}
+freq.addEventListener('input', atualizaSim);
+document.querySelectorAll('.presets button').forEach(b => b.addEventListener('click', () => { freq.value = b.dataset.f; atualizaSim(); }));
+atualizaSim();
+
+function desenhaSim() {
+    const w = sim.width, h = sim.height, f = +freq.value;
+    sctx.clearRect(0, 0, w, h);
+    const ciclos = 1.5 + 10 * Math.log(f / 54) / Math.log(3500 / 54);
+    const k = ciclos * 2 * Math.PI / w;
+    faseSim += 0.06 + ciclos * 0.006;
+
+    sctx.strokeStyle = 'rgba(255,255,255,0.15)'; sctx.lineWidth = 1;
+    sctx.beginPath(); sctx.moveTo(0, h / 2); sctx.lineTo(w, h / 2); sctx.stroke();
+
+    sctx.strokeStyle = '#38bdf8'; sctx.lineWidth = 4; sctx.beginPath();
+    for (let x = 0; x <= w; x += 2) {
+        const y = h / 2 + Math.sin(x * k - faseSim) * (h * 0.36);
+        x === 0 ? sctx.moveTo(x, y) : sctx.lineTo(x, y);
+    }
+    sctx.stroke();
+    
+    const lam = w / ciclos;
+    sctx.strokeStyle = '#e5e9f5'; sctx.lineWidth = 2;
+    sctx.beginPath();
+    sctx.moveTo(20, h - 22); sctx.lineTo(20 + lam, h - 22);
+    sctx.moveTo(20, h - 28); sctx.lineTo(20, h - 16);
+    sctx.moveTo(20 + lam, h - 28); sctx.lineTo(20 + lam, h - 16);
+    sctx.stroke();
+    sctx.fillStyle = '#e5e9f5'; sctx.font = '16px Arial';
+    sctx.fillText('λ', 20 + lam / 2 - 4, h - 30);
+    
+    requestAnimationFrame(desenhaSim);
+}
+desenhaSim();
+</script>
 </body>
 </html>
